@@ -3,3 +3,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.btn {
+  @apply font-bold px-8 py-2 my-4 rounded text-indigo-400 block border-2 border-indigo-400;
+}
+.btn:hover {
+  @apply text-white bg-indigo-400;
+}
+.btn:focus,
+.btn:active {
+  @apply outline-none;
+}
+.input {
+  @apply p-2 text-gray-800 outline-none border-b-2 border-gray-300 mt-4 bg-transparent;
+}
+.input:active,
+.input:focus {
+  @apply border-indigo-400;
+}
+.form {
+  @apply flex flex-col p-4 my-2 mx-auto max-w-lg;
+}
+.error {
+  @apply text-red-400 p-2 text-sm;
+}
